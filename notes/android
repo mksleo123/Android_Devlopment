@@ -1,0 +1,18 @@
+xml is taking about where the component reside in our app and java file tell what logic we have to use.
+layouts are nothing but screen . xml is the basic skeleton of app
+Material theme Ui
+views are nothing but just a widget
+
+AppCompactActivity class we have to extends
+view group is like a container which holds view and other view gaps
+
+Whatever we want to import we have to impoet it and use find viewby id
+we can change the input type also in the xml file in edit text to change the input type 
+onclick Listerner is a interface——and have func onClick
+
+Toast is nothing but the mesaage just appear on screen on submission
+Res—>drawable—> its is helpful in drawing the images or other thing
+
+DESIGN —TEXTSTYLE—flag
+
+We can do one thing we can just directly add android:onclick=“calque” and provide defination in main activity then also our app will work
