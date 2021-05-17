@@ -6,4 +6,6 @@
     <color name="black">#373331</color>
     <color name="orange">#D6895E</color>
     <color name="white">#fff</color>
+    <color name="green">#00FF00</color>
+    <color name="pinkish">	#ff7f7f</color>
 </resources>

@@ -11,7 +11,7 @@ import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Scriptable;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btnPercent,btnPlus,btnMinus,btnMultiply,btnDivision,btnEqual,btnClear,btnDot,btnBracket;
+    Button btn0,btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btnPercent,btnPlus,btnMinus,btnMultiply,btnDivision,btnEqual,btnClear,btnDot,btnEXPO;
     TextView tvInput,tvOutput;
     String process;
     boolean checkBracket = false;
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         btnClear = findViewById(R.id.btnClear);
         btnDot = findViewById(R.id.btnDot);
         btnPercent = findViewById(R.id.btnPercent);
-        btnBracket = findViewById(R.id.btnBracket);
+        btnEXPO = findViewById(R.id.btnBracket);
 
         tvInput = findViewById(R.id.tvInput);
         tvOutput = findViewById(R.id.tvOutput);
@@ -189,24 +189,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 process = tvInput.getText().toString();
-                tvInput.setText(process + "%");
+                tvInput.setText(process + ")");
             }
         });
 
-        btnBracket.setOnClickListener(new View.OnClickListener() {
+        btnEXPO.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (checkBracket){
-                    process = tvInput.getText().toString();
-                    tvInput.setText(process + ")");
-                    checkBracket = false;
-                }else{
-                    process = tvInput.getText().toString();
-                    tvInput.setText(process + "(");
-                    checkBracket = true;
-                }
-
+                process = tvInput.getText().toString();
+                tvInput.setText(process + "(");
             }
         });
 
@@ -229,7 +220,7 @@ public class MainActivity extends AppCompatActivity {
                     Scriptable scriptable = rhino.initStandardObjects();
                     finalResult = rhino.evaluateString(scriptable,process,"javascript",1,null).toString();
                 }catch (Exception e){
-                    finalResult="0";
+                    finalResult="error";
                 }
 
                 tvOutput.setText(finalResult);
