@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "461237905874",
+    "project_id": "jabberapp-aca44",
+    "storage_bucket": "jabberapp-aca44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461237905874:android:153e616ac7bf2a5705000b",
+        "android_client_info": {
+          "package_name": "com.example.jabberapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461237905874-d44l4l24b1cfa9f8m52ufunilg0c0fge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvp1wWC3Bfu4EeUe9Fadh42MwH7Wl7hWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461237905874-d44l4l24b1cfa9f8m52ufunilg0c0fge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

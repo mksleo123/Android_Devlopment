@@ -85,12 +85,12 @@
             android:textColor="#2196F3" />
 
         <Button
-            android:id="@+id/btn_SignIn"
+            android:id="@+id/btn_Signup"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:padding="15dp"
-            android:text="Button"
+            android:text="SignUp"
             app:cornerRadius="4dp"
             tools:text="Sign Up" />
 
